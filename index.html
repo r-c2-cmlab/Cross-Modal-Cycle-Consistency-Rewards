@@ -48,6 +48,15 @@
   <script src="static/js/bulma-carousel.min.js"></script>
   <script src="static/js/bulma-slider.min.js"></script>
   <script src="static/js/index.js"></script>
+  <style>
+  .publication-authors .author-block strong {
+    color: #526db5;   /* 统一蓝灰色 */
+  }
+  .publication-authors a {
+    color: #526db5 !important;   /* 链接保持同样颜色 */
+    text-decoration: none;       /* 去掉下划线 */
+  }
+</style>
 </head>
 <body>
 
@@ -64,15 +73,20 @@
             <div class="is-size-5 publication-authors">
               <span class="author-block">
                 <strong>Zirui Zhang</strong><sup>1</sup>,
+              <span class="author-block">
+                <a href="https://kozmojor.github.io/haoyudong.github.io/" target="_blank" style="text-decoration:none; color:inherit;">
+                  <strong>Haoyu Dong</strong>
+                </a><sup>2</sup>,
               </span>
               <span class="author-block">
-                <strong>Haoyu Dong</strong><sup>2</sup>,
+                <a href="https://sites.google.com/site/kexinpeisite/" target="_blank" style="text-decoration:none; color:inherit;">
+                  <strong>Kexin Pei</strong>
+                </a><sup>3</sup>,
               </span>
               <span class="author-block">
-                <strong>Kexin Pei</strong><sup>3</sup>,
-              </span>
-              <span class="author-block">
-                <strong>Chengzhi Mao</strong><sup>1</sup>
+                <a href="https://chengzhi-mao.github.io/" target="_blank" style="text-decoration:none; color:inherit;">
+                  <strong>Chengzhi Mao</strong>
+                </a><sup>1</sup>
               </span>
             </div>
 
@@ -95,13 +109,13 @@
               <div class="publication-links">
                 <!-- PDF link -->
                 <span class="link-block">
-                  <a href="static/papers/c3r_cvpr2026.pdf"
+                  <a href="static/papers/CVXX2026_Cycle_Consist_arxiv.pdf"
                      target="_blank"
                      class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fas fa-file-pdf"></i>
                     </span>
-                    <span>Paper</span>
+                    <span>Paper (preprint)</span>
                   </a>
                 </span>
 
@@ -640,13 +654,21 @@
     </div>
   </section>
 
-  <!-- Acknowledgements -->
-  <section class="section" id="Acknowledgements">
-    <div class="container is-max-desktop content">
-      <h2 class="title">Acknowledgements</h2>
-      This work used Purdue Anvil GPU through allocation 250774 from the Advanced Cyberinfrastructure Coordination Ecosystem: Services & Support (ACCESS) program, which is supported by U.S. National Science Foundation grants #2138259, #2138286, #2138307, #2137603, and #2138296. We thank Guangxing Han for the insightful discussion. We thank our collaborators and colleagues for helpful discussions and feedback that improved this work, as well as the maintainers of the multimodal benchmarks used in our experiments.
-    </div>
-  </section>
+<!-- Acknowledgements -->
+<section class="section" id="Acknowledgements">
+  <div class="container is-max-desktop content">
+    <h2 class="title">Acknowledgements</h2>
+    <p style="font-size: 1.03rem; line-height: 1.55;">
+      This work used <span style="color:#1b365d; font-weight:600;">Purdue Anvil GPU</span> through allocation 
+      <span style="color:#1b365d; font-weight:600;">250774</span> from the
+      <span style="color:#1b365d; font-weight:600;">Advanced Cyberinfrastructure Coordination Ecosystem: Services &amp; Support (ACCESS)</span>
+      program, which is supported by the 
+      <span style="color:#1b365d; font-weight:600;">U.S. National Science Foundation</span> under grants 
+      <span style="color:#1b365d; font-weight:600;">2138259, 2138286, 2138307, 2137603, and 2138296</span>.
+      We thank <a href="https://guangxinghan.github.io/" target="_blank" style="font-weight:600; color:#1b365d; text-decoration:none;">Guangxing Han</a> for the insightful discussion.
+    </p>
+  </div>
+</section>
 
   <footer class="footer">
     <div class="container">
