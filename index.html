@@ -4,9 +4,9 @@
   <meta charset="utf-8">
 
   <!-- Primary Meta Tags -->
-  <meta name="title" content="C3R: Cross-Modal Cycle Consistency Rewards Improve Multimodal Reasoning">
-  <meta name="description" content="C3R introduces cross-modal cycle consistency rewards for multimodal large language models, turning modality conflicts into label-free reinforcement signals and improving visual–textual reasoning accuracy by up to 7.6 points.">
-  <meta name="keywords" content="multimodal reasoning, vision-language models, reinforcement learning, cycle consistency, C3R, cross-modal rewards, self-supervised RL, modality gap">
+  <meta name="title" content="R-C2: Cross-Modal Cycle Consistency Rewards Improve Multimodal Reasoning">
+  <meta name="description" content="R-C2 introduces cross-modal cycle consistency rewards for multimodal large language models, turning modality conflicts into label-free reinforcement signals and improving visual–textual reasoning accuracy by up to 7.6 points.">
+  <meta name="keywords" content="multimodal reasoning, vision-language models, reinforcement learning, cycle consistency, R-C2, cross-modal rewards, self-supervised RL, modality gap">
   <meta name="author" content="Zirui Zhang, Haoyu Dong, Kexin Pei, Chengzhi Mao">
   <meta name="robots" content="index, follow">
   <meta name="language" content="English">
@@ -14,21 +14,21 @@
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="article">
-  <meta property="og:site_name" content="C3R Project Page">
-  <meta property="og:title" content="C3R: Cross-Modal Cycle Consistency Rewards Improve Multimodal Reasoning"/>
-  <meta property="og:description" content="C3R introduces cross-modal cycle consistency rewards that transform modality conflicts into dense, label-free reinforcement signals, improving multimodal reasoning across benchmarks like ScienceQA, ChartQA, InfoVQA, MathVista, A-OKVQA, and VisualWebArena."/>
-  <meta property="og:url" content="https://c3r-multimodal.github.io"/>
-  <meta property="og:image" content="static/images/c3r_og_banner.png" />
+  <meta property="og:site_name" content="R-C2 Project Page">
+  <meta property="og:title" content="R-C2: Cross-Modal Cycle Consistency Rewards Improve Multimodal Reasoning"/>
+  <meta property="og:description" content="R-C2 introduces cross-modal cycle consistency rewards that transform modality conflicts into dense, label-free reinforcement signals, improving multimodal reasoning across benchmarks like ScienceQA, ChartQA, InfoVQA, MathVista, A-OKVQA, and VisualWebArena."/>
+  <meta property="og:url" content="https://R-C2-multimodal.github.io"/>
+  <meta property="og:image" content="static/images/R-C2_og_banner.png" />
   <meta property="og:image:width" content="1200"/>
   <meta property="og:image:height" content="630"/>
 
   <!-- Twitter -->
-  <meta name="twitter:title" content="C3R: Cross-Modal Cycle Consistency Rewards Improve Multimodal Reasoning">
-  <meta name="twitter:description" content="C3R uses cross-modal cycle consistency rewards to resolve contradictions between visual and textual views of the same content, yielding label-free RL improvements in multimodal reasoning.">
-  <meta name="twitter:image" content="static/images/c3r_twitter_banner.png">
+  <meta name="twitter:title" content="R-C2: Cross-Modal Cycle Consistency Rewards Improve Multimodal Reasoning">
+  <meta name="twitter:description" content="R-C2 uses cross-modal cycle consistency rewards to resolve contradictions between visual and textual views of the same content, yielding label-free RL improvements in multimodal reasoning.">
+  <meta name="twitter:image" content="static/images/R-C2_twitter_banner.png">
   <meta name="twitter:card" content="summary_large_image">
 
-  <title>C3R: Cross-Modal Cycle Consistency Rewards Improve Multimodal Reasoning</title>
+  <title>R-C2: Cross-Modal Cycle Consistency Rewards Improve Multimodal Reasoning</title>
   <link rel="icon" type="image/x-icon" href="static/images/ico.png">
 
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
@@ -67,7 +67,7 @@
         <div class="columns is-centered">
           <div class="column has-text-centered">
             <h1 class="title is-1 publication-title">
-              C3R: Cross-Modal Cycle Consistency Rewards Improve Multimodal Reasoning
+              R-C2: Cross-Modal Cycle Consistency Rewards Improve Multimodal Reasoning
             </h1>
 
             <div class="is-size-5 publication-authors">
@@ -97,11 +97,11 @@
             </div>
 
             <div class="is-size-5 has-text-centered" style="margin-top: 0.5em;">
-              <a href="https://c3r-cmlab.github.io/Cross-Modal-Cycle-Consistency-Rewards/"
+              <a href="https://R-C2-cmlab.github.io/Cross-Modal-Cycle-Consistency-Rewards/"
                 class="publication-link"
                 target="_blank"
                 style="color:#d33682; font-weight:500;">
-                https://c3r-cmlab.github.io/C3R-Cross-Modal-Cycle-Consistency-Rewards/
+                https://R-C2-cmlab.github.io/R-C2-Cross-Modal-Cycle-Consistency-Rewards/
               </a>
             </div>
 
@@ -211,7 +211,7 @@
                   >
                     HTML
                   </span>
-                  &nbsp;view, motivating C3R.
+                  &nbsp;view, motivating R-C2.
                 </span>
               </figcaption>
             </figure>
@@ -234,12 +234,12 @@
               same content. This paper argues that this inconsistency is not a failure, but a
               powerful resource for self-reward multimodal learning. Instead of relying on
               flawed voting mechanisms that amplify systematic errors when the majority is
-              wrong, we introduce cross-modal cycle consistency as rewards (C3R) to improve
-              multimodal reasoning. C3R performs backward inference from an answer to a
+              wrong, we introduce cross-modal cycle consistency as rewards (R-C2) to improve
+              multimodal reasoning. R-C2 performs backward inference from an answer to a
               query, switches modalities, and performs forward inference to verify the answer’s
               consistency. This cycle serves as a dense, label-free reward that guides the model
               to resolve its own internal conflicts, while avoiding majority-is-wrong failures of
-              standard voting methods. On standard benchmarks, C3R mitigates
+              standard voting methods. On standard benchmarks, R-C2 mitigates
               modality-specific biases and improves reasoning accuracy by up to 7.6 points.
               Our results show that robust reasoning emerges not just from scaling data, but
               from achieving a bidirectional understanding of the multimodal world.
@@ -297,16 +297,16 @@
     </div>
   </section>
 
-  <!-- Section: C3R Framework Overview (Figure 3) -->
+  <!-- Section: R-C2 Framework Overview (Figure 3) -->
   <section class="section hero is-small is-light">
     <div class="hero-body">
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column is-full">
-            <h2 class="title is-3 has-text-centered">C3R: Cross-Modal Cycle Consistency Rewards</h2>
+            <h2 class="title is-3 has-text-centered">R-C2: Cross-Modal Cycle Consistency Rewards</h2>
             <p class="subtitle is-5 has-text-centered"
                style="max-width: 780px; margin: 0 auto 1.5rem;">
-              C3R turns cross-modal contradictions into rewards. From a candidate answer,
+              R-C2 turns cross-modal contradictions into rewards. From a candidate answer,
               the model performs backward reasoning to synthesize queries and then runs
               forward inference across text and image views, checking whether the cycle
               returns to the original answer.
@@ -318,8 +318,8 @@
               <div class="card-image" style="background: linear-gradient(135deg,#e0ecff,#eef2ff);">
                 <figure class="image"
                         style="padding:0.5rem 0.5rem 0.5rem; max-width:960px; margin:0 auto;">
-                  <img src="static/images/c3r_cycle_overview.png"
-                       alt="Overview of the C3R cross-modal cycle consistency framework."
+                  <img src="static/images/RC2_cycle_overview.png"
+                       alt="Overview of the R-C2 cross-modal cycle consistency framework."
                        style="border-radius:10px;">
                 </figure>
               </div>
@@ -328,7 +328,7 @@
                   Turning Cycles into Rewards
                 </p>
                 <p class="content is-size-6" style="margin-bottom:0;">
-                  Starting from a candidate answer, C3R runs answer-to-query backward
+                  Starting from a candidate answer, R-C2 runs answer-to-query backward
                   inference in both text and image modalities, then closes four forward
                   cycles: text→text, text→image, image→text, and image→image. Cycles
                   that faithfully reconstruct the original answer are rewarded, while those
@@ -354,7 +354,7 @@
          style="max-width:760px; margin:0 auto 1.5rem;">
         Backward inference asks the model to justify its own answer:
         <em>“for this answer to be correct, what query must have been asked?”</em>
-        C3R applies this in both text and image views, together with our reconstructed
+        R-C2 applies this in both text and image views, together with our reconstructed
         <strong>VisualWebArena multiple-choice dataset</strong>.
       </p>
 
@@ -378,7 +378,7 @@
               </p>
               <p class="content is-size-6" style="margin-bottom:0;">
                 Across very different tasks, backward query generation reliably turns an
-                answer into the right kind of question—showing that C3R can extract
+                answer into the right kind of question—showing that R-C2 can extract
                 meaningful supervision anywhere the model makes a prediction.
               </p>
             </div>
@@ -430,7 +430,7 @@
 
         <p class="subtitle is-5 has-text-centered"
            style="max-width: 820px; margin: 0 auto 1.5rem;">
-          We evaluate C3R on six multimodal reasoning benchmarks and observe
+          We evaluate R-C2 on six multimodal reasoning benchmarks and observe
           consistent gains in both <span class="has-text-weight-semibold">accuracy</span>
           and <span class="has-text-weight-semibold">cross-modal consistency</span>.
           The carousel below summarizes quantitative improvements and
@@ -453,7 +453,7 @@
                 <figure class="image benchmark-figure"
                         style="padding: 1.25rem 1.25rem 0.75rem;">
                   <img src="static/images/tab_accuracy_overview.png"
-                       alt="Overall accuracy of base model, voting baselines, and C3R across all benchmarks."
+                       alt="Overall accuracy of base model, voting baselines, and R-C2 across all benchmarks."
                        style="border-radius: 10px;">
                 </figure>
               </div>
@@ -462,7 +462,7 @@
                   Accuracy Gains Over Baselines
                 </p>
                 <p class="content is-size-6" style="margin-bottom:0;">
-                  C3R improves accuracy on all six benchmarks compared to the
+                  R-C2 improves accuracy on all six benchmarks compared to the
                   base MLLM and multimodal voting. Improvements reach
                   <strong>+7.6 points</strong> on the most challenging
                   datasets, showing that resolving cross-modal contradictions
@@ -494,7 +494,7 @@
                   Cross-Modal Consistency Improvements
                 </p>
                 <p class="content is-size-6" style="margin-bottom:0;">
-                  Beyond accuracy, C3R substantially increases agreement between
+                  Beyond accuracy, R-C2 substantially increases agreement between
                   <span class="has-text-weight-semibold">screenshot</span> and
                   <span class="has-text-weight-semibold">HTML</span> views.
                   Disagreement rates drop across all datasets, indicating that
@@ -518,7 +518,7 @@
                 <figure class="image benchmark-figure"
                         style="padding: 1rem 0rem 0.75rem;">
                   <img src="static/images/fig_case_studies.png"
-                       alt="Qualitative examples comparing base model, voting, and C3R across multiple benchmarks."
+                       alt="Qualitative examples comparing base model, voting, and R-C2 across multiple benchmarks."
                        style="border-radius: 10px;">
                 </figure>
               </div>
@@ -530,7 +530,7 @@
                   Qualitative examples from ScienceQA, ChartQA, DocVQA, InfoVQA,
                   MathVista, and VisualWebArena show that when the base model or
                   voting baselines are confused by modality-specific biases,
-                  C3R leverages backward–forward cycles to recover answers that
+                  R-C2 leverages backward–forward cycles to recover answers that
                   are correct and cross-modally consistent.
                 </p>
               </div>
@@ -558,7 +558,7 @@
             <h2 class="title is-3 has-text-centered">Which Cycles Matter Most?</h2>
             <p class="subtitle is-5 has-text-centered"
                style="max-width: 780px; margin: 0 auto 1.5rem;">
-              C3R supports many combinations of backward and forward modalities.
+              R-C2 supports many combinations of backward and forward modalities.
               Ablations reveal which paths contribute most to accuracy and
               self-consistency.
             </p>
@@ -583,7 +583,7 @@
                   different pairs of backward and forward modalities. Mixed
                   cycles that traverse both text and image views consistently
                   outperform single-modality cycles, confirming that explicitly
-                  enforcing cross-modal consistency is key to the gains of C3R.
+                  enforcing cross-modal consistency is key to the gains of R-C2.
                 </p>
               </div>
             </div>
@@ -624,7 +624,7 @@
                   Training on Hard Inconsistencies
                 </p>
                 <p class="content is-size-6" style="margin-bottom:0;">
-                  As C3R focuses training on samples with larger cross-modal
+                  As R-C2 focuses training on samples with larger cross-modal
                   disagreement, both task accuracy and agreement between
                   modalities improve. The hardest conflicts—where text and image
                   most disagree—provide the strongest self-supervised signal for
@@ -645,8 +645,8 @@
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
-      <pre><code>@article{c3r2025cross,
-  title   = {C3R: Cross-Modal Cycle Consistency Rewards Improve Multimodal Reasoning},
+      <pre><code>@article{R-C22025cross,
+  title   = {R-C2: Cross-Modal Cycle Consistency Rewards Improve Multimodal Reasoning},
   author  = {Zirui Zhang, Haoyu Dong, Kexin Pei, Chengzhi Mao},
   journal = {arXiv preprint},
   year    = {2025}
